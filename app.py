@@ -8,7 +8,7 @@ def create_app(test_config=None):
 	    return render_template('index.html')
 
 	@app.route('/tei')
-	def hello():
-	    return render_template('tei.html')
+	def tei():
+	    return render_template('FR_BeggarsOpera_MasterFile.xml')
 
 	return app
