@@ -44,15 +44,15 @@
 		<xsl:param name="filePrefix" select="'http://dcl.slis.indiana.edu/teibp'"/>
 		
 	-->
-	<xsl:param name="filePrefix" select="'..'"/>
+	<xsl:param name="filePrefix" select="'/Users/hawc/tei-boilerplate-flask/static/'"/>
 	
-	<xsl:param name="teibpCSS" select="concat($filePrefix,'/css/teibp.css')"/>
-	<xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
-	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
-	<xsl:param name="lessJS" select="concat($filePrefix,'/js/build-support/less.min.js')"/>
-	<xsl:param name="theme.default" select="concat($filePrefix,'/css/teibp.css')"/>
-	<xsl:param name="theme.sleepytime" select="concat($filePrefix,'/css/sleepy.css')"/>
-	<xsl:param name="theme.terminal" select="concat($filePrefix,'/css/terminal.css')"/>
+	<xsl:param name="teibpCSS" select="concat($filePrefix,'css/teibp.css')"/>
+	<xsl:param name="customCSS" select="concat($filePrefix,'css/custom.css')"/>
+	<xsl:param name="teibpJS" select="concat($filePrefix,'js/teibp.js')"/>
+	<xsl:param name="lessJS" select="concat($filePrefix,'js/build-support/less.min.js')"/>
+	<xsl:param name="theme.default" select="concat($filePrefix,'css/teibp.css')"/>
+	<xsl:param name="theme.sleepytime" select="concat($filePrefix,'css/sleepy.css')"/>
+	<xsl:param name="theme.terminal" select="concat($filePrefix,'css/terminal.css')"/>
 	
 	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
 		<xd:desc>

@@ -1,14 +1,13 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
+app = Flask(__name__, template_folder='templates')
 
-def create_app(test_config=None):
-	app = Flask(__name__)
+@app.route('/')
+def index():
+    return render_template('index.html')
 
-	@app.route('/')
-	def index():
-	    return render_template('index.html')
+@app.route('/tei')
+def tei():
+    return render_template('BeggarsOpera.xml')
 
-	@app.route('/tei')
-	def tei():
-	    return render_template('FR_BeggarsOpera_MasterFile.xml')
-
-	return app
+if __name__ == '__main__':
+    app.run(debug=True,host='0.0.0.0')

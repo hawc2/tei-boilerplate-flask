@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<link link rel= "stylesheet" type= "text/css" href="{{ url_for('static',filename='css/beggars_css_1.css')}}"/>
 <!--MEI/TEI header added, as per Marcus Bingenheimer 7-1-20-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:mei="http://www.music-encoding.org/ns/mei">
     <teiHeader>
@@ -12,16 +14,17 @@
                     <name key="n80045862">Gay, John, 1685-1732</name>
                 </author>
 
-                <editor>
-                    <name>Newman, Steve</name>
-                    <name>Krick, Jack</name>
-                    <name>Rowland, Fred</name>
-                    <name>Gates, Ian</name>
-                    <name>Wermer-Colan, Alex</name>
+                <editor>:<br />
+                    <name>Newman, Steve</name><br />
+                    <name>Rowland, Fred</name><br />
+                    <name>Krick, Jack</name><br />
+                    <name>Wermer-Colan, Alex</name><br />
+                    <name>Gates, Ian</name><br />
+                    
                 </editor>
             </titleStmt>
             <editionStmt>
-                <edition>2020-06-08</edition>
+                <edition>2020-11-18</edition>
             </editionStmt>
             <extent/>
             <publicationStmt>
