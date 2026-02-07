@@ -44,7 +44,7 @@
 		<xsl:param name="filePrefix" select="'http://dcl.slis.indiana.edu/teibp'"/>
 		
 	-->
-	<xsl:param name="filePrefix" select="'/Users/hawc/tei-boilerplate-flask/static/'"/>
+	<xsl:param name="filePrefix" select="'/static/'"/>
 	
 	<xsl:param name="teibpCSS" select="concat($filePrefix,'css/teibp.css')"/>
 	<xsl:param name="customCSS" select="concat($filePrefix,'css/custom.css')"/>
