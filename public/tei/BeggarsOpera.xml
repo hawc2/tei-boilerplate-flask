@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
-<link rel="stylesheet" type="text/css" href="../static/css/teibp.css"/>
-<link rel="stylesheet" type="text/css" href="../static/css/custom.css"/>
 <!--MEI/TEI header added, as per Marcus Bingenheimer 7-1-20-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:mei="http://www.music-encoding.org/ns/mei">
     <teiHeader>
