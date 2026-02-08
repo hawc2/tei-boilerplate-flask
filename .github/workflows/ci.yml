@@ -10,6 +10,9 @@ on:
 jobs:
   smoke:
     runs-on: ubuntu-latest
+    env:
+      PIPENV_VENV_IN_PROJECT: "1"
+      PYTHONPATH: "."
     defaults:
       run:
         working-directory: .
@@ -30,8 +33,14 @@ jobs:
       - name: Install dependencies
         run: pipenv install --dev --deploy
 
+      - name: Verify Flask install
+        run: pipenv run python -m flask --version
+
       - name: Smoke import app
         run: pipenv run python -c "import app; assert app.app"
 
       - name: Run tests
-        run: pipenv run pytest
+        run: pipenv run python -m pytest -q
+
+      - name: Security check
+        run: pipenv check
