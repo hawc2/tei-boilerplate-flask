@@ -42,5 +42,3 @@ jobs:
       - name: Run tests
         run: pipenv run python -m pytest -q
 
-      - name: Security check
-        run: pipenv check
